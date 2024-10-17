@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="main.js"></script>
 </head>
+
 <body>
     <h1>ACME Car Rental</h1>
     <label>
         Pickup Date:
-        <input type="date" id = "pickupDate">    
+        <input type="date" id="pickupDate">
     </label>
     <br>
     <label>
-        Number of Days: 
-        <input type="number" id = "numberOfDays" >    
+        Number of Days:
+        <input type="number" id="numberOfDays">
     </label>
     <h3>Options</h3>
-    <label><input type="checkbox" id="tollTag">Electronic Toll Tag ($3.95/day)</label> <br>
+    <label><input type="checkbox" id="toll">Electronic Toll Tag ($3.95/day)</label> <br>
     <label><input type="checkbox" id="gps">GPS ($2.95/day)</label> <br>
     <label><input type="checkbox" id="roadside">Roadside Assistance ($2.95/day)</label> <br>
 
     <h3>Under 25 Year Old?</h3>
-    <label><input type="radio" name="under" id = "notUnder" checked> No, I am no baby!</label>
-    <label><input type="radio" name="under" id = "isUnder"> Yes, I am a baby!</label> 
+    <label><input type="radio" name="under" id="isUnder" checked> No, I am no baby!</label>
+    <label><input type="radio" name="under" id="notUnder" value="under"> Yes, I am a baby!</label>
     <br><br>
     <button id="estimateButton">Estimate Total Cost</button>
     <br><br>
-    <pre id="receipt">
+    <pre id="receiptOutput">
         Car rental: $<span>XXX.XX</span>
         Options: $<span>XXX.XX</span>
         Under 25 Surcharge: $<span>XXX.XX</span>
@@ -36,4 +38,5 @@
         Total: $<span>XXX.XX</span>
     </pre>
 </body>
+
 </html>

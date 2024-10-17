@@ -17,7 +17,7 @@
     <br>
     <label>
         Number of Days:
-        <input type="number" id="numberOfDays">
+        <input type="number" id="numberOfDays" value="1">
     </label>
     <h3>Options</h3>
     <label><input type="checkbox" id="toll">Electronic Toll Tag ($3.95/day)</label> <br>
@@ -25,17 +25,14 @@
     <label><input type="checkbox" id="roadside">Roadside Assistance ($2.95/day)</label> <br>
 
     <h3>Under 25 Year Old?</h3>
-    <label><input type="radio" name="under" id="isUnder" checked> No, I am no baby!</label>
-    <label><input type="radio" name="under" id="notUnder" value="under"> Yes, I am a baby!</label>
+    <label><input type="radio" name="under" id="notUnder" checked> No, I am no baby!</label>
+    <label><input type="radio" name="under" id="isUnder" value="under"> Yes, I am a baby!</label>
     <br><br>
     <button id="estimateButton">Estimate Total Cost</button>
     <br><br>
     <pre id="receiptOutput">
-        Car rental: $<span>XXX.XX</span>
-        Options: $<span>XXX.XX</span>
-        Under 25 Surcharge: $<span>XXX.XX</span>
-        <br>
-        Total: $<span>XXX.XX</span>
+        
+Your Reciept Will Be Located Here!
     </pre>
 </body>
 
